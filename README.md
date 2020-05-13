@@ -15,6 +15,7 @@ Setup seeds
 create-react-app with full CRUD capabilities.
 
 ### User Stories
-This app is intended for 
+This app is intended for group home managers or direct support professionals who have multiple clients in one facility in need of medical appointments.
+
 User can see a directory of their doctors and clients.
 User can add, edit and delete an appointment
