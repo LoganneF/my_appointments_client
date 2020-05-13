@@ -6,7 +6,7 @@
   --oasis-blue: rgba(191, 215, 234, 1);
 }
 
-h1 {
+h1, h3 {
   text-align: center;
 }
 .container {

@@ -11,9 +11,9 @@ function Aside(props) {
        <h5>Insurance: Kaiser</h5>
      </div>
      <div className="clients">
-       <h3>Loganne</h3>
-       <h5>Allergies: Gluten</h5>
-       <h5>Insurance: Kaiser</h5>
+       <h3>Morgan</h3>
+       <h5>Allergies: Penicillin</h5>
+       <h5>Insurance: Blue Cross</h5>
      </div>
     </aside>
   );

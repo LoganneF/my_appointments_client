@@ -13,7 +13,7 @@ class App extends React.Component {
 
  handleAdd = (event, formInputs) => {
   event.preventDefault()
-  fetch('/appointments', {
+  fetch('https://house-appointments-api.herokuapp.com/', {
     body: JSON.stringify(formInputs),
     method: 'POST',
     headers: {
@@ -31,7 +31,7 @@ class App extends React.Component {
 }
 
 handleDelete = (deletedAppt) => {
-  fetch(`http://localhost:3000/appointments/${deletedAppt.id}`, {
+  fetch(`https://house-appointments-api.herokuapp.com/${deletedAppt.id}`, {
     method: "DELETE",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -50,7 +50,7 @@ handleDelete = (deletedAppt) => {
 handleUpdate = (event, formInputs) => {
   event.preventDefault();
   console.log("in it to add it");
-  fetch(`http://localhost:3000/appointments/${formInputs.id}`, {
+  fetch(`https://house-appointments-api.herokuapp.com/${formInputs.id}`, {
     body: JSON.stringify(formInputs),
     method: "PUT",
     headers: {
@@ -69,7 +69,7 @@ componentDidMount() {
 }
 
 getAppointments () {
-  fetch('/appointments')
+  fetch('https://house-appointments-api.herokuapp.com/appointments')
     .then(response => response.json())
     .then(json => this.setState({appointments: json}))
     .catch(error => console.error(error))

@@ -34,7 +34,6 @@ class Appointment extends React.Component {
                 <td>{appointment.patient}</td>
                 <td>{appointment.doctor}</td>
                 <td>{appointment.specialty}</td>
-                <td>{appointment.specialty}</td>
                 <td>{appointment.date}</td>
                 <td>{appointment.time}</td>
                 <td><button onClick={() => handleDelete(appointment)}>X</button>

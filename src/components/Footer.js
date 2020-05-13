@@ -4,7 +4,7 @@ import NewAppt from './NewAppt.js'
 function Footer(props) {
     return (
       <footer>
-        <h1>Add New Appointment</h1>
+        <h3>Add New Appointment</h3>
         <NewAppt handleSubmit={props.handleSubmit}/>
       </footer>
     )
