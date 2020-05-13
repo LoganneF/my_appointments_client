@@ -13,7 +13,7 @@ class App extends React.Component {
 
  handleAdd = (event, formInputs) => {
   event.preventDefault()
-  fetch('https://house-appointments-api.herokuapp.com/', {
+  fetch('https://house-appointments-api.herokuapp.com/appointments', {
     body: JSON.stringify(formInputs),
     method: 'POST',
     headers: {
