@@ -2,9 +2,7 @@
 
 :root {
   --black: rgba(0, 0, 0, 1);
-  --oasis-green: rgba(131, 151, 136, 1);
-  --sandy: rgba(238, 224, 203, 1);
-  --shady-sand: rgba(186, 168, 152, 1);
+  --white: rgb(249, 248, 246);
   --oasis-blue: rgba(191, 215, 234, 1);
 }
 
@@ -32,28 +30,41 @@ header {
 nav {
   grid-area: nav;
   margin-left: 0.5rem;
-  background-color: var(--oasis-green);
+  background-color: var(--oasis-blue);
+}
+
+.doctors {
+  border: 1px solid var(--white);
+  text-align: center;
 }
 
 main {
   grid-area: content;
-  background-color: var(--sandy);
+  background-color: var(--oasis-blue);
 }
 
 aside {
   grid-area: aside;
   margin-right: 0.5rem;
-  background-color: var(--oasis-green);
+  background-color: var(--oasis-blue);
+}
+
+.clients {
+  border: 1px solid var(--white);
+  text-align: center;
 }
 
 footer {
   grid-area: footer;
   background-color: var(--oasis-blue);
 }
-.notice {
-  border: 5px solid var(--shady-sand);
-  padding: 5px;
+.appointment {
+  border: 1px solid var(--white);
   font-family: "Stylish", sans-serif;
+  /* margin: 1px;
+   padding: 5px;
+  width: 400px;
+  height: 250px; */
 }
 
 form {
@@ -63,6 +74,8 @@ form {
   grid-gap: 0.3em;
   background: #eee;
   padding: 0.1em;
+  width: 450px;
+  margin: 0 auto;
 }
 
 form > label {

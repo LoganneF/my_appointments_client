@@ -28,14 +28,21 @@ class Appointment extends React.Component {
             toggleForm={this.toggleForm}
           />
         ) : (
-          <div className="appointment">
-            <h3>{appointment.patient}</h3>
-            <p>{appointment.doctor}</p>
-            <small>{appointment.specialty}</small>
-            <small>{appointment.date}</small>
-            <small>{appointment.time}</small>
-            <button onClick={() => handleDelete(appointment)}>X</button>
-            <button onClick={this.toggleForm}>Edit this Entry</button>
+          <div >
+            <table>
+              <tr className="appointment">
+                <td>{appointment.patient}</td>
+                <td>{appointment.doctor}</td>
+                <td>{appointment.specialty}</td>
+                <td>{appointment.specialty}</td>
+                <td>{appointment.date}</td>
+                <td>{appointment.time}</td>
+                <td><button onClick={() => handleDelete(appointment)}>X</button>
+                    <button onClick={this.toggleForm}>Edit this Entry</button>
+                </td>
+              </tr>
+            </table>
+            
           </div>
         )}
       </>
