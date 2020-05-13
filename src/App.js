@@ -50,7 +50,7 @@ handleDelete = (deletedAppt) => {
 handleUpdate = (event, formInputs) => {
   event.preventDefault();
   console.log("in it to add it");
-  fetch(`https://house-appointments-api.herokuapp.com/${formInputs.id}`, {
+  fetch(`https://house-appointments-api.herokuapp.com/appointments/${formInputs.id}`, {
     body: JSON.stringify(formInputs),
     method: "PUT",
     headers: {
